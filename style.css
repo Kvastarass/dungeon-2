@@ -26,9 +26,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+/* body{
   overflow-x: hidden;
-}
+} */
 
 body h1,
 h2,
@@ -64,13 +64,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  /* justify-content: center; */
+  justify-content: space-between;
   margin: 0 20%;
 
 }
-.row{
-  margin: 0;
-}
+
 .container-sm{
   display: flex;
   flex-direction: column;
@@ -78,8 +76,10 @@ p {
 /* .cards{
   margin: 0 150px;
 } */
-
-.col-sm-3{
+.card-container{
+  padding: 10px 10px;
+}
+/* .col-sm-4{
   border: 1px solid #e2e2e2;
   border-radius: 2px;
   background-color: #fafafa;
@@ -92,8 +92,8 @@ p {
   gap: 20px;
   white-space: nowrap;
   min-width: 300px;
-}
-.col-sm-3 h6{
+} */
+.col-sm-4 h6{
   margin: 0;
   font-weight: bold;
   color: var(--second-text-color);
