@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Martel:wght@600;700&family=Montserrat:wght@500&family=Open+Sans:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Martel:wght@600;700;900&family=Montserrat:wght@500&family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <title>Billy</title>
@@ -21,24 +21,27 @@
     <!-- header -->
 
     <div class="header">
-      <div class="nav">
-        <div class="nav-logo">
-          <h3>Judico</h3>
+      <div class="container header-container">
+        <div class="navi">
+          <div class="row">
+            <div class="col-sm-6 nav-logo">
+              <h3>Judico</h3>
+            </div>
+            <div class="col-sm-6 nav-menu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#feature">Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="menu-icon">
+              <img src="images/menu-icon.png" alt="" />
+            </div>
+          </div>
         </div>
-        <div class="nav-menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="menu-icon">
-          <img src="images/menu-icon.png" alt="" />
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
+        <!-- <div class="container header-container"> -->
+        <div class="row hero">
           <div class="header-hero">
             <h1>
               Help to reclaim <br />
@@ -46,11 +49,18 @@
               freedom
             </h1>
             <h4>
-              We know how large objects will act, but things on a small scale.
+              We know how large objects will act, <br />
+              but things on a small scale.
             </h4>
             <div class="header-hero-buttons">
-              <a href="#">Get Quote Now</a>
-              <a href="#">Learn More</a>
+              <div class="row">
+                <div class="col-sm-6 btn-container">
+              <a href="#" class="btn">Get Quote Now</a>
+              </div>
+              <div class="col-sm-6 btn-container">
+              <a href="#" class="btn">Learn More</a>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -59,37 +69,36 @@
 
     <!-- Features section -->
 
-    <section>
-      <div class="container-sm">
+    <section class="features">
+      <div class="container-sm" id="feature">
         <div class="features-heading">
-          <div class="container-sm">
-            <h2>Every Client Matters</h2>
-            <p>
-              Problems trying to resolve the conflict between <br />
-              the two major realms of Classical physics: Newtonian mechanics
-            </p>
-          </div>
+          <h2>Every Client Matters</h2>
+          <p>
+            Problems trying to resolve the conflict between <br />
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
         </div>
-        <!-- <div class="cards"> -->
         <div class="row">
-          <div class="col-sm-4 card-container">
-            <div class="card">
+          <div class="col-sm-4 label-container">
+            <div class="label">
               <div class="blue-round">
                 <img src="images/round-icon-page.png" />
               </div>
-              <h6>Frauds or Mislead</h6>
+              <div class="label-header">
+                <h6>Frauds or Mislead</h6>
+              </div>
             </div>
           </div>
-          <div class="col-sm-4 card-container">
-            <div class="card">
+          <div class="col-sm-4 label-container">
+            <div class="label">
               <div class="blue-round">
                 <img src="images/round-icon-scales.png" />
               </div>
               <h6>Bailes & Warrants</h6>
             </div>
           </div>
-          <div class="col-sm-4 card-container">
-            <div class="card">
+          <div class="col-sm-4 label-container">
+            <div class="label">
               <div class="blue-round">
                 <img src="images/round-icon-scales.png" />
               </div>
@@ -98,28 +107,38 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4 card-container">
-            <div class="card">
+          <div class="col-sm-4 label-container">
+            <div class="label">
               <div class="blue-round">
                 <img src="images/round-icon-hammer.png" />
               </div>
               <h6>Traffic Related Crimes</h6>
             </div>
           </div>
-          <div class="col-sm-4 card-container">
-            <div class="card">
+          <div class="col-sm-4 label-container">
+            <div class="label">
               <div class="blue-round">
                 <img src="images/round-icon-page.png" />
               </div>
               <h6>Family Law</h6>
             </div>
           </div>
-          <div class="col-sm-4 card-container">
-            <div class="card">
+          <div class="col-sm-4 label-container">
+            <div class="label">
               <div class="blue-round">
                 <img src="images/round-icon-hammer.png" />
               </div>
               <h6>Business Law</h6>
+            </div>
+          </div>
+        </div>
+        <div class="features-buttons">
+          <div class="row">
+            <div class="col-sm-6 btn-container">
+              <a href="#" class="btn">Get Quote Now</a>
+            </div>
+            <div class="col-sm-6 btn-container">
+              <a href="#" class="btn">Learn More</a>
             </div>
           </div>
         </div>
