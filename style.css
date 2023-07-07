@@ -53,6 +53,7 @@ p {
   background-size: cover;
   background-position: center;
   height: 110vh;
+
   /* max-width: 100%;
   min-width: 100%; */
 }
@@ -61,10 +62,11 @@ p {
 }
 
 .navi {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   padding-top: 40px;
   padding-bottom: 20px;
+  /* overflow-x: hidden; */
 }
 
 .nav-logo {
@@ -228,12 +230,6 @@ p {
   border-radius: 0;
 }
 
-
-/* .card-img-top {
-  height: 100%;
-  width: 18rem;
-} */
-
 .about h2 {
   color: var(--text-color);
   font-weight: bold;
@@ -241,7 +237,6 @@ p {
 .about p {
   color: var(--second-text-color);
 }
-
 
 .blue-round-big a {
   /* display: flex; */
@@ -287,4 +282,94 @@ p {
   height: 32px;
   width: 32px;
   margin-right: 10px;
+}
+
+/* testimonials */
+
+.testimonials {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#testimonials-bg {
+  background: #295c7a;
+}
+
+.testimonials-card {
+  flex: 0 0 auto;
+  width: 602px;
+  height: 361px;
+  padding: 30px 60px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  /* min-width: 100%; */
+}
+.testimonials-card-content {
+  border-radius: 0;
+}
+.testimonials-main {
+  white-space: inherit;
+}
+.testimonials-main {
+  gap: 30px;
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  
+}
+/* .testimonials {
+  background: #295c7a;
+} */
+
+/* .testimonials-card-content{
+  display: flex;
+  flex-direction: row;
+} */
+
+#clients-icon {
+  position: absolute;
+  object-position: -135px 0;
+  overflow: visible;
+  /* white-space: nowrap; */
+}
+
+.tcc-stars {
+  padding: 15px 0;
+}
+
+.col-4 {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .testimonials-card {
+    width: 353px;
+    height: 408px;
+    margin: 0;
+  }
+  .scrolling-wrapper-flexbox {
+    overflow-x: unset;
+  }
+  .testimonials-main {
+    flex-direction: column;
+  }
+
+  .scrolling-wrapper-flexbox {
+    align-items: center;
+    justify-content: center;
+
+    min-width: 100%;
+  }
+  #clients-icon {
+    object-position: -105px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials-card {
+    width: 253px;
+    height: 408px;
+    margin: 0;
+  }
 }
