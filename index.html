@@ -27,11 +27,11 @@
       <div class="header">
         <div class="container-sm header-container">
           <div class="d-flex flex-row navi">
-            <div class="d-flex row-sm flex-nowrap">
-              <div class="col-sm-6 nav-logo">
+            <div class="d-flex row flex-nowrap navbar">
+              <div class="col-sm-4 nav-logo">
                 <h3>Judico</h3>
               </div>
-              <div class="col-sm-6 nav-menu">
+              <div class="col-sm-4 nav-menu">
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#feature">Product</a></li>
@@ -39,8 +39,8 @@
                   <li><a href="#">Contact</a></li>
                 </ul>
               </div>
-              <div class="menu-icon">
-                <img src="images/menu-icon.png" alt="" />
+              <div class="col-sm-4 menu-icon">
+                <img class="menu-icn" src="images/menu-icon.png" onclick="menutoggle()" />
               </div>
             </div>
           </div>
@@ -326,5 +326,20 @@
       </div>
     </div>
     </section>
+
+<!-- js for toggle menu -->
+    <script>
+      var menuitems = document.getElementById("menuitems");
+
+      menuitems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "200px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -364,9 +364,17 @@ p {
   #clients-icon {
     object-position: -105px 0;
   }
-  .navi{
-    overflow-x: hidden;
+  .nav-menu{
+    display: none;
   }
+  .menu-icon{
+    display: block;
+    right: 20px;
+  }
+  .navbar{
+    justify-content: stretch;
+  }
+  
 }
 
 @media screen and (max-width: 400px) {
@@ -375,7 +383,5 @@ p {
     height: 408px;
     margin: 0;
   }
-  .navi{
-    overflow-x: hidden;
-  }
+
 }
