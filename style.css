@@ -375,4 +375,7 @@ p {
     height: 408px;
     margin: 0;
   }
+  .navi{
+    overflow-x: hidden;
+  }
 }
