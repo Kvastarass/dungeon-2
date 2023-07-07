@@ -364,6 +364,9 @@ p {
   #clients-icon {
     object-position: -105px 0;
   }
+  .nav-menu{
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (max-width: 500px) {
