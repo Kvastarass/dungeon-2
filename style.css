@@ -46,7 +46,7 @@ p {
   font-family: "open sans", sans-serif;
 }
 
-/* header */
+/* ------------------header------------------ */
 
 .header {
   background: url(images/header-cover.png);
@@ -57,19 +57,8 @@ p {
   /* max-width: 100%;
   min-width: 100%; */
 }
-.menu-icon {
-  display: none;
-}
 
-.navi {
-  /* display: flex;
-  flex-direction: row; */
-  padding-top: 40px;
-  padding-bottom: 20px;
-  /* overflow-x: hidden; */
-}
-
-.nav-logo {
+/* .nav-logo {
   align-self: center;
 }
 .nav-logo h3 {
@@ -94,6 +83,28 @@ p {
   color: var(--second-text-color);
   text-decoration: none;
   padding-right: 35px;
+} */
+nav h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  margin: 0;
+  padding: 30px 30px;
+}
+nav ul li {
+  padding-left: 35px;
+}
+.nav-item a {
+  color: var(--second-text-color);
+  font-family: open sans, sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.navbar-collapse {
+  text-align: center;
 }
 
 .header-hero h1 {
@@ -130,7 +141,7 @@ p {
   padding-top: 125px;
 }
 
-/* features */
+/* ------------------features------------------------------------ */
 
 .features-heading {
   margin-bottom: 30px;
@@ -215,7 +226,7 @@ p {
   color: var(--light-text-color);
 }
 
-/* about */
+/* ------------------about------------------ */
 
 .about {
   padding: 100px 0;
@@ -284,7 +295,7 @@ p {
   margin-right: 10px;
 }
 
-/* testimonials */
+/* ------------------testimonials------------------ */
 
 .testimonials {
   padding-top: 80px;
@@ -315,8 +326,7 @@ p {
 .scrolling-wrapper-flexbox {
   display: flex;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  
+  /* -webkit-overflow-scrolling: touch; */
 }
 /* .testimonials {
   background: #295c7a;
@@ -342,7 +352,158 @@ p {
   max-width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+/* ------------------team------------------ */
+
+#team{
+  background-color: #fafafa;
+}
+
+.team{
+  padding: 80px 0;
+}
+
+.team-header{
+  text-align: center;
+}
+.team-header h2{
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+.team-header p{
+  color: var(--second-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+
+
+.team-two{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.attorney-card{
+  justify-content: center;
+  width: 240px;
+  
+  white-space: nowrap;
+}
+.at-card{
+  text-align: center;
+  align-self: center;
+  
+  margin: 0;
+  
+}
+.attorney-card h6{
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.attorney-card h5{
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.attorney-card p{
+  color: var(--second-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.attorney-card img{
+  margin-bottom: 5px;
+}
+
+/* ------------------contacts------------------ */
+
+#contacts{
+  background: var(--text-color);
+}
+
+.contacts-main-next{
+  padding: 0!important;
+}
+
+.contacts-header{
+  color: var(--light-text-color);
+}
+.contacts-header h2{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.contacts-header p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+
+.consultation-form{
+  padding: 40px 50px;
+}
+.consultation-form h2{
+font-size: 40px;
+font-weight: bold;
+color: var(--text-color);
+text-align: center;
+}
+
+.forms{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-group{
+  margin-bottom: 5px;
+}
+
+input{
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 12px 12px;
+}
+
+select:invalid{
+  color: var(--second-text-color);
+}
+select{
+  width: 100%;
+  border-radius: 5px;
+  padding: 12px 12px;
+}
+
+.book-button{
+  width: 100%;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--secondary-color-2);
+  color: var(--light-text-color);
+  font-family: open sans, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+/* ------------------small screen------------------ */
+
+@media screen and (max-width: 767px) {
+  
+  .hero{
+    padding-top: 20px;
+  }
+
   .testimonials-card {
     width: 353px;
     height: 408px;
@@ -364,17 +525,27 @@ p {
   #clients-icon {
     object-position: -105px 0;
   }
-  .nav-menu{
-    display: none;
+  /* .navi {
+    background: #ffffff;
+  } */
+  nav ul li {
+    padding-left: 0;
   }
-  .menu-icon{
-    display: block;
-    right: 20px;
+  /* .navbar-collapse{
+    background-color: #ffffff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+  } */
+  .team-two{
+    gap: 30px;
   }
-  .navbar{
-    justify-content: stretch;
+  .at-card{
+    width: 330px;
   }
-  
+
+
 }
 
 @media screen and (max-width: 400px) {
@@ -383,5 +554,4 @@ p {
     height: 408px;
     margin: 0;
   }
-
 }
