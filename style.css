@@ -480,6 +480,10 @@ nav ul li {
   letter-spacing: 0.2px;
 }
 
+.card-img-left{
+  object-fit: contain;
+}
+
 .consultation-form {
   padding: 40px 50px;
 }
@@ -566,6 +570,9 @@ select {
 .footer-social-media {
   /* justify-content: space-between; */
   gap: 20px;
+}
+.footer-social-media img{
+  object-fit: contain;
 }
 
 /* ------------------small screen------------------ */
